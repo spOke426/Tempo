@@ -1,0 +1,104 @@
+/* One simple CSS file for every page. No Bootstrap required. */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f5f9;
+    color: #263448;
+    line-height: 1.5;
+}
+.wrapper { width: min(1100px, 94%); margin: 0 auto; }
+.topbar { background: #214a74; color: white; padding: 22px 0; }
+.topbar h1 { font-size: 24px; margin: 0 0 3px; }
+.topbar p { margin: 0; color: #d8e7f5; font-size: 14px; }
+.nav { background: #173856; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 3px; }
+.nav a { padding: 12px 13px; color: #e8f1fa; text-decoration: none; font-size: 14px; }
+.nav a:hover, .nav a.active { background: #3978b0; color: white; }
+.main { padding: 25px 0 35px; min-height: 65vh; }
+h2 { margin: 0 0 18px; font-size: 23px; }
+h3 { margin: 0 0 15px; font-size: 18px; }
+.panel {
+    background: white;
+    border: 1px solid #dbe2ea;
+    border-radius: 7px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(20, 40, 60, 0.04);
+}
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.menu-card {
+    display: block;
+    padding: 20px;
+    border: 1px solid #d5e1ed;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #214a74;
+    background: #f7fafd;
+}
+.menu-card:hover { background: #e9f3fc; border-color: #9fc5e6; }
+.menu-card strong { display: block; margin-bottom: 7px; }
+.menu-card span { display: block; font-size: 14px; color: #596a7e; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(200px, 1fr)); gap: 15px; }
+label { font-weight: bold; font-size: 14px; display: flex; flex-direction: column; gap: 6px; }
+input, select {
+    width: 100%;
+    padding: 10px 11px;
+    border: 1px solid #bfcbd7;
+    border-radius: 4px;
+    background: white;
+    color: #263448;
+    font: inherit;
+    font-weight: normal;
+}
+input:focus, select:focus { outline: 2px solid #97caee; border-color: #3a86c4; }
+input[readonly] { background: #edf0f4; }
+.form-actions { display: flex; align-items: end; gap: 10px; flex-wrap: wrap; }
+button, .button {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #2369a6;
+    border: 1px solid #2369a6;
+    border-radius: 4px;
+    color: white;
+    font: inherit;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+button:hover, .button:hover { background: #1a5180; }
+.secondary { background: white; color: #2369a6; }
+.secondary:hover { background: #eaf2f9; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { border: 1px solid #d7e0e8; padding: 10px; text-align: left; vertical-align: middle; }
+th { background: #e8f0f7; color: #264f76; white-space: nowrap; }
+tr:nth-child(even) td { background: #f8fafc; }
+.actions { white-space: nowrap; }
+.actions a { color: #2369a6; text-decoration: none; margin-right: 7px; }
+.actions a:hover { text-decoration: underline; }
+.actions form { display: inline-block; margin-right: 7px; }
+.link-button { border: 0; background: transparent; padding: 0; color: #2369a6; font-size: 14px; }
+.link-button:hover { border: 0; background: transparent; color: #173856; text-decoration: underline; }
+.link-button.danger { color: #b42b37; }
+.link-button.danger:hover { color: #7b1621; }
+.notice, .error { padding: 12px 15px; border-radius: 4px; margin: 0 0 20px; }
+.notice { background: #e8f5ea; border: 1px solid #b0d6b6; color: #225a2e; }
+.error { background: #fff0f0; border: 1px solid #efb6b6; color: #922a2a; }
+.hint { color: #5e6b79; font-size: 13px; margin: 13px 0 0; }
+.filter-form { display: flex; flex-wrap: wrap; align-items: end; gap: 14px; }
+.filter-form label { min-width: 180px; flex: 1; }
+.info-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; }
+.info-row p { margin: 0 0 17px; }
+.totals { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.totals > div { background: #f1f6fb; padding: 13px 17px; border-radius: 5px; flex: 1; min-width: 160px; }
+.totals span { display: block; font-size: 13px; color: #5d7185; }
+.totals strong { font-size: 19px; }
+.footer { color: #718091; text-align: center; padding: 15px; font-size: 13px; }
+@media (max-width: 600px) {
+    .topbar h1 { font-size: 20px; }
+    .form-grid { grid-template-columns: 1fr; }
+    .panel { padding: 14px; }
+    .nav a { padding: 9px; }
+}

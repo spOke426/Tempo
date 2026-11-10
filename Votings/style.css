@@ -1,0 +1,11 @@
+body  { font-family: Arial, sans-serif; margin: 30px; background: #f5f6fa; color: #222; }
+h1    { color: #23407a; }
+.menu a { color: #23407a; text-decoration: none; font-weight: bold; }
+table { border-collapse: collapse; background: white; margin: 8px 0 20px 0; }
+th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; }
+th    { background: #d7e0f5; }
+input, select { padding: 5px; margin: 3px 0; }
+button { padding: 5px 12px; cursor: pointer; }
+.box  { background: white; border: 1px solid #999; padding: 12px; margin-bottom: 20px; width: 380px; }
+.msg  { color: green; font-weight: bold; }
+.err  { color: red; font-weight: bold; }
